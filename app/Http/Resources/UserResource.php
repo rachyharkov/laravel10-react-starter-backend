@@ -7,6 +7,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class UserResource extends JsonResource
 {
+    public static $wrap = false; // Disable wrapping, so we can use the resource as a collection normally without the data key
     /**
      * Transform the resource into an array.
      *
